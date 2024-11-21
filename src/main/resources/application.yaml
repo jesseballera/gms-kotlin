@@ -1,0 +1,22 @@
+server:
+  port: 8000
+
+spring:
+  sleuth:
+    http:
+      legacy:
+        enabled: true
+#  r2dbc:
+#    url: r2dbc:mongodb://localhost:27017/gms-kotlin
+#    username: root
+#    password: root
+#    database: gms-kotlin
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: gms-kotlin
+      username: root
+      password: root
+      auto-index-creation: true
+      authentication-database: admin
